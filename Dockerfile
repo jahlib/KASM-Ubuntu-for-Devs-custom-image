@@ -49,9 +49,11 @@ RUN ln -sf /usr/share/applications/google-chrome.desktop $HOME/Desktop/google-ch
 
 # FileZilla Install
 RUN mkdir -p $STARTUPDIR/install/filezilla/ && \
-    wget https://raw.githubusercontent.com/kasmtech/workspaces-images/refs/heads/develop/src/ubuntu/install/filezilla/filezilla.xml -O $STARTUPDIR/install/filezilla/filezilla.xml
+    #wget https://raw.githubusercontent.com/kasmtech/workspaces-images/refs/heads/develop/src/ubuntu/install/filezilla/filezilla.xml -O $STARTUPDIR/install/filezilla/filezilla.xml
+    wget https://somnitelnonookay.ucoz.net/kasmweb/filezilla.xml -O $STARTUPDIR/install/filezilla/filezilla.xml
 
-RUN wget https://raw.githubusercontent.com/kasmtech/workspaces-images/refs/heads/develop/src/ubuntu/install/filezilla/install_filezilla.sh -O /tmp/filezilla.sh && bash /tmp/filezilla.sh
+#RUN wget https://raw.githubusercontent.com/kasmtech/workspaces-images/refs/heads/develop/src/ubuntu/install/filezilla/install_filezilla.sh -O /tmp/filezilla.sh && bash /tmp/filezilla.sh
+RUN wget https://somnitelnonookay.ucoz.net/kasmweb/install_filezilla.sh -O /tmp/filezilla.sh && bash /tmp/filezilla.sh
 RUN ln -sf /usr/share/applications/filezilla.desktop $HOME/Desktop/filezilla.desktop && chmod 777 $HOME/Desktop/filezilla.desktop
 
 # Cursor Install
