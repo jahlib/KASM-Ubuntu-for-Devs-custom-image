@@ -2,7 +2,9 @@ How to add to KASM (These screenshots are from the Windsurf-based Kasm image, bu
 
 Get Dockerfile from this repo to KASM machine and run
 
+```
 sudo docker build -t custom-kasm:ubuntu-4devs -f Dockerfile .
+```
 
 ![image](https://somnitelnonookay.ucoz.net/kasm-config1.png)
 
